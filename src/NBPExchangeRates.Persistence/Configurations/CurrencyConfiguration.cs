@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NBPExchangeRates.Domain.Entities;
 
-namespace NBPExchangeRates.Persistence.Configuration;
+namespace NBPExchangeRates.Persistence.Configurations;
 
 public class CurrencyConfiguration : IEntityTypeConfiguration<Currency>
 {
