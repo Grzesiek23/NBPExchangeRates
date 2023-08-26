@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBPExchangeRates.WebApp", "src\NBPExchangeRates.WebApp\NBPExchangeRates.WebApp.csproj", "{A2FE7352-C71C-449B-9F6F-935D4CD0F29B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBPExchangeRates.Domain", "src\NBPExchangeRates.Domain\NBPExchangeRates.Domain.csproj", "{9F5D5EB2-5BF0-450D-9223-E21D21059BD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBPExchangeRates.Application", "src\NBPExchangeRates.Application\NBPExchangeRates.Application.csproj", "{7EB2A602-3B65-423E-9170-EE5B36294003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBPExchangeRates.Infrastructure", "src\NBPExchangeRates.Infrastructure\NBPExchangeRates.Infrastructure.csproj", "{8235064A-488F-4BEE-9B09-E83C42E8E614}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBPExchangeRates.Persistence", "src\NBPExchangeRates.Persistence\NBPExchangeRates.Persistence.csproj", "{AE156B5E-D202-4593-B75E-13B5BF5829B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2FE7352-C71C-449B-9F6F-935D4CD0F29B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2FE7352-C71C-449B-9F6F-935D4CD0F29B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2FE7352-C71C-449B-9F6F-935D4CD0F29B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2FE7352-C71C-449B-9F6F-935D4CD0F29B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F5D5EB2-5BF0-450D-9223-E21D21059BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F5D5EB2-5BF0-450D-9223-E21D21059BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F5D5EB2-5BF0-450D-9223-E21D21059BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F5D5EB2-5BF0-450D-9223-E21D21059BD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EB2A602-3B65-423E-9170-EE5B36294003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EB2A602-3B65-423E-9170-EE5B36294003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EB2A602-3B65-423E-9170-EE5B36294003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EB2A602-3B65-423E-9170-EE5B36294003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8235064A-488F-4BEE-9B09-E83C42E8E614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8235064A-488F-4BEE-9B09-E83C42E8E614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8235064A-488F-4BEE-9B09-E83C42E8E614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8235064A-488F-4BEE-9B09-E83C42E8E614}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE156B5E-D202-4593-B75E-13B5BF5829B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE156B5E-D202-4593-B75E-13B5BF5829B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE156B5E-D202-4593-B75E-13B5BF5829B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE156B5E-D202-4593-B75E-13B5BF5829B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
