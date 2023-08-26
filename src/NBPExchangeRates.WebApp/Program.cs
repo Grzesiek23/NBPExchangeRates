@@ -1,3 +1,4 @@
+using NBPExchangeRates.Infrastructure;
 using NBPExchangeRates.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +8,8 @@ var configuration = builder.Configuration;
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddPersistence(configuration);
+
+builder.Services.AddInfrastructure();
 
 var app = builder.Build();
 

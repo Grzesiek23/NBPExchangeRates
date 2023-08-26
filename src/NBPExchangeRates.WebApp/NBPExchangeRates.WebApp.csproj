@@ -15,6 +15,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\NBPExchangeRates.Application\NBPExchangeRates.Application.csproj" />
+      <ProjectReference Include="..\NBPExchangeRates.Infrastructure\NBPExchangeRates.Infrastructure.csproj" />
       <ProjectReference Include="..\NBPExchangeRates.Persistence\NBPExchangeRates.Persistence.csproj" />
     </ItemGroup>
 
