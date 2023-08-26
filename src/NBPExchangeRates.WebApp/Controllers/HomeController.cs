@@ -1,14 +1,15 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using NBPExchangeRates.WebApp.Models;
+using Serilog;
 
 namespace NBPExchangeRates.WebApp.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly ILogger _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger logger)
     {
         _logger = logger;
     }
