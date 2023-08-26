@@ -16,7 +16,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddPersistence(configuration);
 
-builder.Services.AddInfrastructure();
+builder.Services.AddInfrastructure(configuration);
 
 var app = builder.Build();
 
