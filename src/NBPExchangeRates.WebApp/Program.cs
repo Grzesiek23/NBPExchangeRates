@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Logging;
 using NBPExchangeRates.Infrastructure;
 using NBPExchangeRates.Persistence;
+using NBPExchangeRates.WebApp.Middlewares;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +23,8 @@ var app = builder.Build();
 
 var loggerFactory = app.Services.GetRequiredService<ILoggerFactory>();
 loggerFactory.AddSerilog();
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 if (!app.Environment.IsDevelopment())
 {
