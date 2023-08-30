@@ -1,6 +1,6 @@
-﻿namespace NBPExchangeRates.Contracts.Dtos;
+﻿namespace NBPExchangeRates.Contracts.Responses;
 
-public class ExchangeRateDto
+public class ExchangeRateResponse
 {
     public string Currency { get; set; } = null!;
     public string Code { get; set; } = null!;

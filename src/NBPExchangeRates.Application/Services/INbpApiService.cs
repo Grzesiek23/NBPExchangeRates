@@ -1,9 +1,9 @@
 using NBPExchangeRates.Application.Enums;
-using NBPExchangeRates.Contracts.Dtos;
+using NBPExchangeRates.Contracts.Responses;
 
 namespace NBPExchangeRates.Application.Services;
 
 public interface INbpApiService
 {
-    Task<List<ExchangeRateTableDto?>?> GetTableAsync(NbpTableType tableType);
+    Task<List<ExchangeRateTableResponse?>?> GetTableAsync(NbpTableType tableType);
 }

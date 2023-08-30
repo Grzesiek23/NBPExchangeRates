@@ -1,6 +1,6 @@
 using NBPExchangeRates.Application.Enums;
 using NBPExchangeRates.Application.Services;
-using NBPExchangeRates.Contracts.Dtos;
+using NBPExchangeRates.Contracts.Responses;
 using NBPExchangeRates.Infrastructure.Configuration;
 using Newtonsoft.Json;
 using Serilog;
@@ -19,7 +19,7 @@ public class NbpApiService : INbpApiService
         _httpClient = httpClientFactory.CreateClient(HttpClientConstants.NbpClient);
     }
 
-    public async Task<List<ExchangeRateTableDto?>?> GetTableAsync(NbpTableType tableType)
+    public async Task<List<ExchangeRateTableResponse?>?> GetTableAsync(NbpTableType tableType)
     {
         _logger.Debug("Starting NbpApiService: GetTable {TableType}", tableType);
         var response = await _httpClient.GetAsync($"{TablesEndpoint}{tableType}");
@@ -38,7 +38,7 @@ public class NbpApiService : INbpApiService
             return null;
         }
 
-        var responseDto = JsonConvert.DeserializeObject<List<ExchangeRateTableDto?>?>(responseContent);
+        var responseDto = JsonConvert.DeserializeObject<List<ExchangeRateTableResponse?>?>(responseContent);
 
         return responseDto;
     }
