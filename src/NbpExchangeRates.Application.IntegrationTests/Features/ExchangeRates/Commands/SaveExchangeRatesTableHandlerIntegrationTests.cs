@@ -83,4 +83,10 @@ public class SaveExchangeRatesTableHandlerIntegrationTests : FakeContextFixture
         // Assert
         act.Should().ThrowAsync<Exception>().WithMessage("No data to save");
     }
+    
+    [TearDown]
+    public async Task Dispose()
+    {
+        await DisposeAsync();
+    }
 }

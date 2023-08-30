@@ -62,4 +62,10 @@ public class GetExchangeRatesTableByIdHandlerIntegrationTests : FakeContextFixtu
         result.Should().BeOfType<ExchangeRateSnapshotDto>();
         result.ExchangeRates.Should().HaveCount(2);
     }
+    
+    [TearDown]
+    public async Task Dispose()
+    {
+        await DisposeAsync();
+    }
 }
