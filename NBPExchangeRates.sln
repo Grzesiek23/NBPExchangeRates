@@ -10,9 +10,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBPExchangeRates.Infrastruc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBPExchangeRates.Persistence", "src\NBPExchangeRates.Persistence\NBPExchangeRates.Persistence.csproj", "{AE156B5E-D202-4593-B75E-13B5BF5829B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBPExchangeRates.Contracts", "NBPExchangeRates.Contracts\NBPExchangeRates.Contracts.csproj", "{0E98D577-0F8B-4C47-9BF9-6F904860002F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBPExchangeRates.Contracts", "src\NBPExchangeRates.Contracts\NBPExchangeRates.Contracts.csproj", "{481C6C27-05AE-47E6-AC7B-D069A439E73D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NbpExchangeRates.Application.IntegrationTests", "NbpExchangeRates.Application.IntegrationTests\NbpExchangeRates.Application.IntegrationTests.csproj", "{11578E82-EB2F-4690-B6A5-0FB91460FC6A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NbpExchangeRates.Application.IntegrationTests", "src\NbpExchangeRates.Application.IntegrationTests\NbpExchangeRates.Application.IntegrationTests.csproj", "{0FF27FDB-415F-420A-A870-DB7EB999BFB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,13 +40,13 @@ Global
 		{AE156B5E-D202-4593-B75E-13B5BF5829B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE156B5E-D202-4593-B75E-13B5BF5829B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE156B5E-D202-4593-B75E-13B5BF5829B3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0E98D577-0F8B-4C47-9BF9-6F904860002F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E98D577-0F8B-4C47-9BF9-6F904860002F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E98D577-0F8B-4C47-9BF9-6F904860002F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0E98D577-0F8B-4C47-9BF9-6F904860002F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{11578E82-EB2F-4690-B6A5-0FB91460FC6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{11578E82-EB2F-4690-B6A5-0FB91460FC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{11578E82-EB2F-4690-B6A5-0FB91460FC6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{11578E82-EB2F-4690-B6A5-0FB91460FC6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{481C6C27-05AE-47E6-AC7B-D069A439E73D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{481C6C27-05AE-47E6-AC7B-D069A439E73D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{481C6C27-05AE-47E6-AC7B-D069A439E73D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{481C6C27-05AE-47E6-AC7B-D069A439E73D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FF27FDB-415F-420A-A870-DB7EB999BFB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF27FDB-415F-420A-A870-DB7EB999BFB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF27FDB-415F-420A-A870-DB7EB999BFB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF27FDB-415F-420A-A870-DB7EB999BFB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

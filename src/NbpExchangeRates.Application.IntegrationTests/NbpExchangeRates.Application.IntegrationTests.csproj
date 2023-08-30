@@ -20,6 +20,8 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\NBPExchangeRates.Persistence\NBPExchangeRates.Persistence.csproj" />
+      <ProjectReference Include="..\src\NBPExchangeRates.Contracts\NBPExchangeRates.Contracts.csproj" />
       <ProjectReference Include="..\src\NBPExchangeRates.Persistence\NBPExchangeRates.Persistence.csproj" />
     </ItemGroup>
 

@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\NBPExchangeRates.Application\NBPExchangeRates.Application.csproj" />
+      <ProjectReference Include="..\NBPExchangeRates.Contracts\NBPExchangeRates.Contracts.csproj" />
     </ItemGroup>
 
     <ItemGroup>
