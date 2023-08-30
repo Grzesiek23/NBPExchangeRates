@@ -1,0 +1,42 @@
+﻿@model NBPExchangeRates.WebApp.ViewModels.ExchangeRateViewModel
+
+@{
+    ViewBag.Title = "Podgląd danych";
+    Layout = "_Layout";
+
+    if (Model.ExchangeRateSnapshotDto.ExchangeRates.Any())
+    {
+        <h2>Exchange Rates</h2>
+        <p>Effective Date: @Model.ExchangeRateSnapshotDto.EffectiveDate</p>
+        <p>Table: @Model.ExchangeRateSnapshotDto.Table</p>
+        <p>No: @Model.ExchangeRateSnapshotDto.Number</p>
+        <p>Created at: @Model.ExchangeRateSnapshotDto.CreatedAt</p>
+        <table class="exchange-table">
+            <thead>
+            <tr>
+                <th>Currency</th>
+                <th>Code</th>
+                <th>Mid</th>
+                <th>Bid</th>
+                <th>Ask</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var rate in Model.ExchangeRateSnapshotDto.ExchangeRates)
+            {
+                <tr>
+                    <td>@rate.Currency?.Name</td>
+                    <td>@rate.Currency?.Code</td>
+                    <td>@(rate.Mid is null ? " - " : rate.Mid)</td>
+                    <td>@(rate.Bid is null ? " - " : rate.Bid)</td>
+                    <td>@(rate.Ask is null ? " - " : rate.Ask)</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No data available.</p>
+    }
+}
