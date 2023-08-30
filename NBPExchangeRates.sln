@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBPExchangeRates.Persistenc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBPExchangeRates.Contracts", "NBPExchangeRates.Contracts\NBPExchangeRates.Contracts.csproj", "{0E98D577-0F8B-4C47-9BF9-6F904860002F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NbpExchangeRates.Application.IntegrationTests", "NbpExchangeRates.Application.IntegrationTests\NbpExchangeRates.Application.IntegrationTests.csproj", "{11578E82-EB2F-4690-B6A5-0FB91460FC6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{0E98D577-0F8B-4C47-9BF9-6F904860002F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E98D577-0F8B-4C47-9BF9-6F904860002F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E98D577-0F8B-4C47-9BF9-6F904860002F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11578E82-EB2F-4690-B6A5-0FB91460FC6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11578E82-EB2F-4690-B6A5-0FB91460FC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11578E82-EB2F-4690-B6A5-0FB91460FC6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11578E82-EB2F-4690-B6A5-0FB91460FC6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

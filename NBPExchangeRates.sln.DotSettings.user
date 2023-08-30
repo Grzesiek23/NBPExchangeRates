@@ -1,0 +1,8 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=432ac714_002De362_002D41dc_002D8eec_002Db7421c51ffcc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Handle_ValidId_ReturnsExchangeRateSnapshotDto" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::11578E82-EB2F-4690-B6A5-0FB91460FC6A::net7.0::NbpExchangeRates.Application.IntegrationTests.Features.ExchangeRates.Queries.GetExchangeRatesTableByIdHandlerIntegrationTests.Handle_ValidId_ReturnsExchangeRateSnapshotDto&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::11578E82-EB2F-4690-B6A5-0FB91460FC6A::net7.0::NbpExchangeRates.Application.IntegrationTests.Features.ExchangeRates.Commands.SaveExchangeRatesTableHandlerIntegrationTests.Handle_ValidTableType_ReturnsExchangeRateSnapshotId&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::11578E82-EB2F-4690-B6A5-0FB91460FC6A::net7.0::NbpExchangeRates.Application.IntegrationTests.Features.ExchangeRates.Commands.SaveExchangeRatesTableHandlerIntegrationTests.Handle_InvalidTableType_ThrowsException&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
