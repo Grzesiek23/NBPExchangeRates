@@ -1,0 +1,8 @@
+﻿@model NBPExchangeRates.WebApp.ViewModels.ExchangeRateViewModel
+
+@{
+    ViewBag.Title = "Podgląd danych";
+    Layout = "_Layout";
+
+    @await Html.PartialAsync("_SnapshotPartial", Model)
+}

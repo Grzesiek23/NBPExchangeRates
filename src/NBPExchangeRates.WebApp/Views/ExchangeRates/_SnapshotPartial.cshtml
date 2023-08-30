@@ -1,9 +1,6 @@
 ﻿@model NBPExchangeRates.WebApp.ViewModels.ExchangeRateViewModel
 
 @{
-    ViewBag.Title = "Podgląd danych";
-    Layout = "_Layout";
-
     if (Model.ExchangeRateSnapshotDto.ExchangeRates.Any())
     {
         <h2>Exchange Rates</h2>
