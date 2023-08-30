@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Exchange Rates";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Pobieranie tabeli kursów ze strony NBP</h1>
+    <p>Dokumentacja API: <a href="https://api.nbp.pl/">dostępna tutaj</a>.</p>
+
+    <form id="myForm" action="/ExchangeRates/LoadTableDataForm" method="post">
+        <select name="tableTypeString" id="tableTypeSelector">
+            <option value="A">Tabela A</option>
+            <option value="B">Tabela B</option>
+            <option value="C">Tabela C</option>
+        </select>
+        <button type="submit">Wczytaj podgląd danych (Formularz)</button>
+    </form>
+    <button id="loadData">Wczytaj podgląd danych (Ajax)</button>
+
+    <div id="dataContainer"></div>
+
+    <script>
+        $(document).ready(function () {
+            $("#loadData").click(function () {
+                $("#dataContainer").html("Loading...");
+                let selectedTableType = $("#tableTypeSelector").val();
+                $.ajax({
+                    url: "/ExchangeRates/LoadTableDataAjax",
+                    type: "POST",
+                    data: { tableTypeString: selectedTableType },
+                    success: function (data) {
+                        $("#dataContainer").html(data);
+                    },
+                    error: function () {
+                        $("#dataContainer").html("Wystąpił błąd podczas wczytywania danych.");
+                    }
+                });
+            });
+        });
+    </script>
+</div>
