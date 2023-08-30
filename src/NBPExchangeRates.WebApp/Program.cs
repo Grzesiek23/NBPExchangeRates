@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Logging;
+using NBPExchangeRates.Application;
 using NBPExchangeRates.Infrastructure;
 using NBPExchangeRates.Persistence;
 using NBPExchangeRates.WebApp.Middlewares;
@@ -18,6 +19,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddPersistence(configuration);
 
 builder.Services.AddInfrastructure(configuration);
+
+builder.Services.AddApplication();
 
 var app = builder.Build();
 
