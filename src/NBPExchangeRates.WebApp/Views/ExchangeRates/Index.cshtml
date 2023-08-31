@@ -6,14 +6,21 @@
     <h1 class="display-4">Pobieranie tabeli kursów ze strony NBP</h1>
     <p>Dokumentacja API: <a href="https://api.nbp.pl/">dostępna tutaj</a>.</p>
 
-    <form id="myForm" action="/ExchangeRates/LoadTableDataForm" method="post">
-        <select name="tableTypeString" id="tableTypeSelector">
-            <option value="A">Tabela A</option>
-            <option value="B">Tabela B</option>
-            <option value="C">Tabela C</option>
-        </select>
+    @using (Html.BeginForm("LoadTableDataForm", "ExchangeRates", FormMethod.Post, new { id = "postForm" }))
+    {
+        @Html.DropDownList(
+            "tableTypeString",
+            new SelectList(new List<object> 
+            {
+                new { Text = "Tabela A", Value = "A" },
+                new { Text = "Tabela B", Value = "B" },
+                new { Text = "Tabela C", Value = "C" }
+            }, "Value", "Text"),
+            new { @id = "tableTypeSelector" }
+        )
+        
         <button type="submit">Wczytaj podgląd danych (Formularz)</button>
-    </form>
+    }
     <button id="loadData">Wczytaj podgląd danych (Ajax)</button>
 
     <div id="dataContainer"></div>
